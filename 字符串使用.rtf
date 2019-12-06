@@ -1,0 +1,111 @@
+{\rtf1\ansi\ansicpg936\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red137\green89\blue169;\red255\green255\blue255;\red68\green68\blue67;
+\red234\green183\blue10;\red199\green41\blue41;\red113\green140\blue2;\red142\green144\blue140;\red245\green135\blue31;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c53725\c34902\c66275;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c26667\c26667\c26275;
+\csgenericrgb\c91765\c71765\c3922;\csgenericrgb\c78039\c16078\c16078;\csgenericrgb\c44314\c54902\c784;\csgenericrgb\c55686\c56471\c54902;\csgenericrgb\c96078\c52941\c12157;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab577
+\pard\pardeftab577\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 import\cf4  \cf5 UIKit\cf4 \
+\
+\cf2 let\cf4  \cf6 intStr\cf4  = \cf7 "28"\cf4 \
+\cf2 Int\cf4 (intStr)\cf8 //
+\f1 \'b8\'f8\'d7\'d6\'b7\'fb\'b4\'ae\'b3\'a3\'c1\'bf\'cc\'ed\'bc\'d3\'c0\'e0\'d0\'cd\'b0\'fc\'b9\'fc\'a3\'ac\'bf\'c9\'d2\'d4\'bd\'ab\'d7\'d6\'b7\'fb\'b4\'ae\'c7\'bf\'d6\'c6\'d7\'aa\'bb\'bb\'ce\'aa\'d6\'c6\'b6\'a8\'c0\'e0\'d0\'cd
+\f0 \cf4 \
+\cf2 var\cf4  \cf6 message\cf4  :\cf2 String\cf4  = \cf7 "you have 3 apples"\cf8 //
+\f1 \'ca\'b5\'c0\'fd\'bb\'af\'d7\'d6\'b7\'fb\'b4\'ae\'b1\'e4\'c1\'bf
+\f0 \cf4 \
+message.hasSuffix(\cf7 "bananas"\cf4 )\cf8 //
+\f1 \'c5\'d0\'b6\'cf\'c4\'b3\'b8\'f6\'d7\'d6\'b7\'fb\'b4\'ae\'b5\'c4\'ce\'b2\'b2\'bf\'ca\'c7\'b7\'f1\'ba\'ac\'d3\'d0\'d6\'b8\'b6\'a8\'d7\'d6\'b7\'fb\'b4\'ae
+\f0 \cf4 \
+message.hasPrefix(\cf7 "you"\cf4 )\cf8 //
+\f1 \'c5\'d0\'b6\'cf\'c4\'b3\'b8\'f6\'d7\'d6\'b7\'fb\'b4\'ae\'b5\'c4\'cd\'b7\'b2\'bf\'ca\'c7\'b7\'f1\'ba\'ac\'d3\'d0\'d6\'b8\'b6\'a8\'d7\'d6\'b7\'fb\'b4\'ae
+\f0 \cf4 \
+message.uppercased()\cf8 //
+\f1 \'bd\'ab\'d7\'d6\'b7\'fb\'b4\'ae\'d7\'aa\'bb\'bb\'ce\'aa\'b4\'f3\'d0\'b4\'c4\'a3\'ca\'bd
+\f0 \cf4 \
+message.lowercased()\cf8 //~~~~~~~~~~~
+\f1 \'d0\'a1\'d0\'b4
+\f0 ~~\cf4 \
+message.capitalized\cf8 //
+\f1 \'bd\'ab\'d7\'d6\'b7\'fb\'b4\'ae\'d6\'d0\'b5\'c4\'b5\'a5\'b4\'ca\'ca\'d7\'d7\'d6\'c4\'b8\'b4\'f3\'d0\'b4
+\f0 \cf4 \
+message.\cf2 isEmpty\cf8 //
+\f1 \'c5\'d0\'b6\'cf\'d7\'d6\'b7\'fb\'b4\'ae\'ca\'c7\'b7\'f1\'ce\'aa\'bf\'d5
+\f0 \cf4 \
+message.components(separatedBy: \cf7 " "\cf4 )\cf8 //
+\f1 \'bd\'ab\'d7\'d6\'b7\'fb\'b4\'ae\'b0\'b4\'d6\'b8\'b6\'a8\'c4\'da\'c8\'dd\'b7\'d6\'b8\'f4\'a3\'ac\'b2\'a2\'b7\'b5\'bb\'d8\'d2\'bb\'b8\'f6\'ca\'fd\'d7\'e9
+\f0 \cf4 \
+message.caseInsensitiveCompare(\cf7 "You Have 3 apples"\cf4 ).rawValue\cf8 //
+\f1 \'bd\'ab\'c1\'bd\'b8\'f6\'d7\'d6\'b7\'fb\'b4\'ae\'bd\'f8\'d0\'d0\'b1\'c8\'bd\'cf\'a3\'ac\'ce\'de\'c2\'db\'b4\'f3\'d0\'a1\'d0\'b4\'a3\'ac\'b2\'e9\'bf\'b4\'ca\'c7\'b7\'f1\'cf\'e0\'cd\'ac
+\f0 \cf4 \
+message.caseInsensitiveCompare(message.uppercased()).rawValue\
+message.caseInsensitiveCompare(\cf7 "you have 3 apples ."\cf4 ).rawValue\
+message.\cf2 contains\cf4 (\cf7 "apples"\cf4 )\cf8 //
+\f1 \'c5\'d0\'b6\'cf\'ca\'c7\'b7\'f1\'b0\'fc\'ba\'ac\'c1\'cb\'c1\'ed\'d2\'bb\'b8\'f6\'d7\'d6\'b7\'fb\'b4\'ae
+\f0 \cf4 \
+message.\cf2 distance\cf4 (from: message.startIndex, to: message.endIndex)\cf8 //
+\f1 \'d7\'d6\'b7\'fb\'b4\'ae\'b4\'d3\'cd\'b7\'b5\'bd\'ce\'b2\'b5\'c4\'be\'e0\'c0\'eb
+\f0 \cf4 \
+message.lengthOfBytes(using: .utf8)\cf8 //
+\f1 \'c5\'d0\'b6\'cf\'d7\'d6\'b7\'fb\'b4\'ae\'d4\'da\'d6\'b8\'b6\'a8\'b1\'e0\'c2\'eb\'c4\'a3\'ca\'bd\'cf\'c2\'b5\'c4\'b3\'a4\'b6\'c8
+\f0 \cf4 \
+message.range(of: \cf7 "have"\cf4 )?.lowerBound\
+message.range(of: \cf7 "have"\cf4 )?.upperBound\cf8 //
+\f1 \'b7\'d6\'b1\'f0\'bb\'f1\'b5\'c3\'d6\'b8\'b6\'a8\'d7\'d6\'b7\'fb\'b4\'ae\'a3\'ac\'d4\'da\'b8\'c3\'d7\'d6\'b7\'fb\'b4\'ae\'b5\'c4\'c6\'f0\'b5\'e3\'d6\'c1\'d6\'d5\'b5\'e3\'a3\'ac\'bd\'e1\'b9\'fb\'ce\'aa\'cb\'f7\'d2\'fd\'c0\'e0\'d0\'cd
+\f0 \cf4 \
+\
+\cf7 "
+\f1 \'c4\'fe\'d0\'f1\'ea\'cd
+\f0 "\cf4 .applyingTransform(StringTransform.toLatin, \cf2 reverse\cf4 : \cf2 false\cf4 )\cf8 //
+\f1 \'b0\'d1\'ba\'ba\'d7\'d6\'d7\'aa\'ce\'aa\'c6\'b4\'d2\'f4
+\f0 \cf4 \
+\
+message.append(\cf7 "."\cf4 )\
+message.append(\cf7 "Congratulations!"\cf4 )\cf8 //
+\f1 \'ce\'b2\'b2\'bf\'d7\'b7\'bc\'d3\'c4\'da\'c8\'dd
+\f0 \cf4 \
+message.\cf2 insert\cf4 (\cf7 "!"\cf4 , at: message.startIndex)\cf8 //
+\f1 \'d6\'b8\'b6\'a8\'ce\'bb\'d6\'c3\'b2\'e5\'c8\'eb\'c4\'da\'c8\'dd
+\f0 ,
+\f1 \'b2\'bb\'c4\'dc\'c1\'ac\'d3\'c3\'c1\'bd\'b8\'f6
+\f0 \cf4 \
+message.\cf2 insert\cf4 (contentsOf: \cf7 "asd"\cf4 , at: message.endIndex)\cf8 //
+\f1 \'d6\'b8\'b6\'a8\'ce\'bb\'d6\'c3\'b2\'e5\'c8\'eb\'c4\'da\'c8\'dd
+\f0 \cf4 \
+\
+\cf2 let\cf4  \cf6 index\cf4  = message.index(message.startIndex, offsetBy: \cf9 3\cf4 )\cf8 //
+\f1 \'bb\'f1\'b5\'c3\'b4\'d3\'d7\'d6\'b7\'fb\'b4\'ae\'b5\'c4\'cd\'b7\'b2\'bf\'bf\'aa\'ca\'bc\'a3\'ac\'d2\'bb\'d6\'b1\'cf\'f2\'ba\'f3\'d2\'c6\'b6\'af\'b5\'bd
+\f0 3
+\f1 \'ce\'bb\'d6\'ae\'ba\'f3\'ce\'aa\'d6\'b9
+\f0 \cf4 \
+\cf2 print\cf4 (message[..<index])\cf8 //
+\f1 \'b4\'f2\'d3\'a1\'ca\'e4\'b3\'f6\'d7\'d6\'b7\'fb\'b4\'ae\'d6\'b8\'b6\'a8\'cb\'f7\'d2\'fd\'c7\'f8\'d3\'f2\'b5\'c4\'c4\'da\'c8\'dd
+\f0 \cf4 \
+\
+\cf2 let\cf4  \cf6 startIndex\cf4  = message.index(message.startIndex, offsetBy: \cf9 14\cf4 )\
+\cf2 let\cf4  \cf6 endIndex\cf4  = message.index(message.endIndex, offsetBy: -\cf9 17\cf4 )\
+\cf2 let\cf4  \cf6 range\cf4  = startIndex..<endIndex\
+\cf2 print\cf4 (message[range])\cf8 //
+\f1 \'b4\'f2\'d3\'a1\'b3\'f6\'d6\'b8\'b6\'a8\'ce\'bb\'d6\'c3\'b5\'c4\'c4\'da\'c8\'dd
+\f0 \cf4 \
+message.replaceSubrange(range, with: \cf7 "asd"\cf4 )\cf8 //
+\f1 \'cc\'e6\'bb\'bb\'d7\'d6\'b7\'fb\'b4\'ae\'c4\'da\'c8\'dd
+\f0 \cf4 \
+\
+\cf2 var\cf4  \cf6 title\cf4  = \cf7 "Interactive tutorials for Xcode and Swift!"\cf4 \
+\cf2 let\cf4  \cf6 startIndexOfTitle\cf4  = title.index(title.endIndex, offsetBy: -\cf9 16\cf4 )\
+\cf2 let\cf4  \cf6 endIndexOfTitle\cf4  = title.index(title.endIndex, offsetBy: -\cf9 6\cf4 )\
+\cf2 let\cf4  \cf6 rangeOfTitle\cf4  = startIndexOfTitle..<endIndexOfTitle\
+title.removeSubrange(rangeOfTitle)\cf8 //
+\f1 \'c9\'be\'b3\'fd\'b7\'b6\'ce\'a7\'c4\'da\'b5\'c4\'c4\'da\'c8\'dd
+\f0 \cf4 \
+title.\cf2 removeAll\cf4 ()\cf8 //
+\f1 \'c9\'be\'b3\'fd\'cb\'f9\'d3\'d0\'c4\'da\'c8\'dd
+\f0 \cf4 \
+\
+}

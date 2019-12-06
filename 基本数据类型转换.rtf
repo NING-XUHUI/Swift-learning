@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg936\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red137\green89\blue169;\red255\green255\blue255;\red68\green68\blue67;
+\red199\green41\blue41;\red245\green135\blue31;\red142\green144\blue140;\red113\green140\blue2;}
+{\*\expandedcolortbl;;\csgenericrgb\c53725\c34902\c66275;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c26667\c26667\c26275;
+\csgenericrgb\c78039\c16078\c16078;\csgenericrgb\c96078\c52941\c12157;\csgenericrgb\c55686\c56471\c54902;\csgenericrgb\c44314\c54902\c784;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab577
+\pard\pardeftab577\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 let\cf4  \cf5 oneThousand\cf4  : \cf2 UInt16\cf4  = \cf6 1000\cf4 \
+\cf2 let\cf4  \cf5 _oneThousand\cf4  : \cf2 UInt16\cf4  = \cf6 1_000\cf7 //_
+\f1 \'cf\'c2\'bb\'ae\'cf\'df\'bf\'c9\'d7\'f7\'ce\'aa\'c7\'a7\'ce\'bb\'b7\'d6\'b8\'f4\'b7\'fb
+\f0 \cf4 \
+\
+\cf7 //let oneHundred :UInt8 = -8 
+\f1 \'d6\'bb\'c4\'dc
+\f0 0~255\cf4 \
+\cf2 let\cf4  \cf5 oneHundred\cf4  : \cf2 UInt8\cf4  = \cf6 100\cf4 \
+\cf2 let\cf4  \cf5 _oneHundred\cf4  : \cf2 UInt8\cf4  = \cf6 0_100\cf4 \
+\cf7 //let result = oneHundred+oneThousand 
+\f1 \'b2\'bb\'cd\'ac\'ce\'bb\'ca\'fd\'b5\'c4\'ca\'fd\'d6\'b5\'b2\'bb\'c4\'dc\'cf\'e0\'bc\'d3
+\f0 \cf4 \
+\cf2 let\cf4  \cf5 result\cf4  = oneThousand + \cf2 UInt16\cf4 (oneHundred)\cf7 //
+\f1 \'d7\'aa\'bb\'bb\'ba\'f3\'bf\'c9\'d2\'d4\'cf\'e0\'bc\'d3
+\f0 \cf4 \
+\
+\cf2 let\cf4  \cf5 two\cf4  = \cf6 2\cf4 \
+\cf2 let\cf4  \cf5 pi\cf4  = \cf6 3.1415\cf4 \
+\cf2 let\cf4  \cf5 result2\cf4  = \cf2 Double\cf4 (two)+pi\cf7 //
+\f1 \'d7\'aa\'bb\'bb\'ce\'aa\'cb\'ab\'be\'ab\'b6\'c8
+\f0 \cf4 \
+\cf2 let\cf4  \cf5 result3\cf4  = two + \cf2 Int\cf4 (pi)\cf7 //
+\f1 \'d7\'aa\'bb\'bb\'ce\'aa\'d5\'fb\'d0\'cd
+\f0 \cf4 \
+\
+\cf2 let\cf4  \cf5 ageString\cf4  = \cf8 "35"\cf4 \
+\cf2 let\cf4  \cf5 ageInt\cf4  = \cf2 Int\cf4 (ageString)\
+\cf2 let\cf4  \cf5 ageFloat\cf4  = \cf2 Float\cf4 (ageString)\
+\cf2 let\cf4  \cf5 ageDouble\cf4  = \cf2 Double\cf4 (ageString)\
+\cf2 let\cf4  \cf5 message\cf4  = \cf8 "I'm"\cf4  + \cf2 String\cf4 (describing: ageInt) + \cf8 "years old !"\cf4 \
+\cf2 let\cf4  \cf5 message1\cf4  = \cf8 "I'm "\cf4  + ageInt!.description + \cf8 " years old !"\cf4 \
+\cf2 let\cf4  \cf5 message2\cf4  = \cf8 "I'm\cf6 \\(\cf4 ageInt!\cf6 )\cf8  years old"\cf4 \
+}
