@@ -85,4 +85,17 @@ message.append(".")
 追加内容
 
 
-### 4.
+### 4.基本数据类型转换
+
+```
+let oneThousand : UInt16 = 1000
+let _oneThousand : UInt16 = 1_000
+```
+下划线_可作为千位分隔符
+```
+let oneHundred :UInt8 = -8
+```
+将会报错，UInt8的范围是0～255.且不同位数的数值不能相加r，如：~~let result = oneHundred+oneThousand~~
+```
+
+```
