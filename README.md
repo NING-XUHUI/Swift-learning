@@ -71,12 +71,17 @@ message.hasSuffix
 message.hasPrefix
 ```
 字符串的**大小写切换**
-
-`message.capitalized`
+```
+message.capitalized
+```
 将字符串中的单词**首字母**大写
-`message.isEmpty`
+```
+message.isEmpty
+```
 判断字符串是否**为空**
-`message.append(".")`
+```
+message.append(".")
+```
 追加内容
 
 
