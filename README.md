@@ -175,4 +175,60 @@ for (key, value) in airport
 ```
 字典的输出方式
 
+### 8.数组的遍历方式
 
+```
+var animals = ["dog","cat","panda"]
+```
+方式1
+```
+for i in 0..<animals.count
+{
+    print(animal[i])
+}
+```
+方式2
+```
+for item in animals
+{
+    print(item)
+}
+```
+方式3:利用枚举
+```
+for(index,value) in animals.enumerated()
+{
+    print("\(index):\(value)")
+}
+```
+
+### 9.一元二元三元运算符
+
+怎么区分一元二元及三元运算符，其实只要看这次运算符修饰了几个数
+```
+a += 1
+a -= 1
+a *= 1
+a /= 1
+```
+显然，此时的+，-，*，/是一元运算符
+```
+1 + 2
+1 - 2
+1 * 2
+1 / 2
+```
+但此时，他们却是二元运算符
+```
+bigger = num1 > num2 ? num1 : num2
+```
+同理，此为三元运算符,因为这里操作了(num1 > num2),num1,num2这三个对象,运算方式为:
+```
+if num1 > num2 {
+    bigger = num1
+}
+else
+{
+    bigger = num2
+}
+```
