@@ -19,8 +19,6 @@ print("good")
 }                           //"good"
 ```
 
-
-
 ### 2.浮点类型：
 
 ```
@@ -52,10 +50,18 @@ e.isZero                    //检查是否为0
 e.magnitude                 //获得当前浮点值大小
 e.negate()                  //获得当前浮点值的负数（相反数）
 e.negate()                  //再次获得～～～～～～
-
-```
 包括其他一些用法，具体见文件
+```
 
 ### 3.字符串的使用
+
+```
+let intStr = "28"
+Int(intStr)
+//给字符串常量添加类型包裹，可以将字符串*强制转换*为指定类型,结果为28
+
+var massage :String="my name is leon"
+message.hasSuffix("leon")
+//判断某个字符串的*尾部*是否含有指定字符串
 
 
