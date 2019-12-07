@@ -95,7 +95,84 @@ let _oneThousand : UInt16 = 1_000
 ```
 let oneHundred :UInt8 = -8
 ```
-将会报错，UInt8的范围是0～255.且不同位数的数值不能相加r，如：~~let result = oneHundred+oneThousand~~
+将会报错，UInt8的范围是0～255.且不同位数的数值不能相加，如：~~let result = oneHundred+oneThousand~~。但是在转换后即可相加，如下:
+```
+let result = oneThousand + UInt16(oneHundred)
 ```
 
+
+### 5.位运算符及溢出运算符
+
 ```
+let binaryBits : UInt8 = 0b00101011/
+let invertedbinaryBits = ~binaryBits
+```
+**二进制**格式及**取反**运算
+```
+let shiftBits : UInt8 = 2
+shiftBits << 2
+shiftBits << 4
+shiftBits >> 2
+```
+左移及右移
+```
+let potentialOverflow = Int16.max
+//potentialOverflow + 2 会报错
+```
+此时应使用`potentialOverflow & + 2 `**溢出运算符**，变量的值被约束为一个合理的值
+
+### 6.for-in循环
+
+```
+for _ in 1 ..< 5    
+{
+    print("you get a star !")
+}
+```
+控制台将打印4遍"you get a star !"
+```
+for item in [1,2,3,4]
+{
+    print(item)
+}
+
+```
+控制台将数组内容一一打印
+```
+let url = "I LOVE UIUC"
+for c in url
+{
+    print(c)
+}
+```
+控制台将逐个打印字母
+
+### 7.Dictionary
+
+```
+var airport : Dictionary<String, String> = ["DUB" : "Dublin","TYO" : "Tokyo" ]
+```
+建立字典，字典内的每一个值都与其key一一对应，如DUB->Dublin，此字典为string类型对应string类型
+```
+var student : Dictionary<String, Any>=["Name" : "Leo","Age" : 21]
+```
+当然也可使用Any类型。
+```
+for key in airport.keys
+{
+    print(">>>>>\(key)")
+}
+
+for value in airport.values
+{
+    print(">>>>>\(value)")
+}
+
+for (key, value) in airport
+{
+    print("\(key):\(value)")
+}
+```
+字典的输出方式
+
+
