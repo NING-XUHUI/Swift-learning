@@ -1,8 +1,9 @@
 # 学习Swift基础
-##一、基础语法 
+## 一、基础语法 
 
-###1.bool类型：
-'''
+### 1.bool类型：
+
+```
 let hasRegistered = false 
 let hasLogined = true
 
@@ -16,12 +17,13 @@ let starCount = 12
 if starCount >= 10 {
 print("good")
 }                           //"good"
-'''
+```
 
 
 
-###2.浮点类型：
-'''
+### 2.浮点类型：
+
+```
 var a = 1.5
 var b : Float = 2.5     //"浮点型"
 var d : Double = 3.5    //"双精度型"
@@ -78,8 +80,8 @@ e.negate()                  //再次获得～～～～～～
 //以截取的方式，获得浮点值除以指定值的余数
 14.0.remainder(dividingBy: 3.0)
 //浮点数值除以指定值的余数
-'''
+```
 
-###3.字符串的使用
+### 3.字符串的使用
 
 
