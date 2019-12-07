@@ -53,34 +53,8 @@ e.magnitude                 //获得当前浮点值大小
 e.negate()                  //获得当前浮点值的负数（相反数）
 e.negate()                  //再次获得～～～～～～
 
-12.5.rounded(.down)         //将浮点值转换为整型数值，并舍入到小于或等于的最接近允许值
--12.5.rounded(.down)
-
-12.5.rounded(.up)           //将浮点值转换为整型数值，并舍入到大于或等于的最接近允许值
--12.5.rounded(.up)
-
-12.5.rounded(.awayFromZero) //将浮点值转换为整型数值，并舍入到幅度大于或等于源数值的允许值，即远离0的方向舍入
--12.5.rounded(.awayFromZero)
-
-12.5.rounded(.towardZero)   //将浮点值转换为整型数值，并舍入到幅度小于或等于源数值的允许值，即靠近0的方向舍入
--12.5.rounded(.towardZero)
-
-12.2.rounded(.toNearestOrAwayFromZero)
-//将浮点值转换为整型数值，并舍入到最接近的允许值，如果两个允许值相等，则选择具有较大幅度的值
-12.5.rounded(.toNearestOrAwayFromZero)
--12.2.rounded(.toNearestOrAwayFromZero)
--12.5.rounded(.toNearestOrAwayFromZero)
-
-13.2.rounded(.toNearestOrEven)
-//将浮点值转换为整型数值，并舍入到最接近的允许值，如果两个允许值相等，则选择偶数
--13.5.rounded(.toNearestOrEven)
--12.5.rounded(.toNearestOrEven)
-
-14.0.truncatingRemainder(dividingBy: 3.0)
-//以截取的方式，获得浮点值除以指定值的余数
-14.0.remainder(dividingBy: 3.0)
-//浮点数值除以指定值的余数
 ```
+包括其他一些用法，具体见文件
 
 ### 3.字符串的使用
 
