@@ -59,11 +59,25 @@ e.negate()                  //再次获得～～～～～～
 let intStr = "28"
 Int(intStr)
 ```
-给字符串常量添加类型包裹，可以将字符串*强制转换*为指定类型,结果为28
+给字符串常量添加类型包裹，可以将字符串**强制转换**为指定类型,结果为28
 ```
 var massage :String="my name is leon"
 message.hasSuffix("leon")
+message.hasPrefix("my")
 ```
-判断某个字符串的*尾部*是否含有指定字符串
+判断某个字符串的**尾部**或**头部**是否含有指定字符串
+```
+message.hasSuffix
+message.hasPrefix
+```
+字符串的**大小写切换**
+
+`message.capitalized`
+将字符串中的单词**首字母**大写
+`message.isEmpty`
+判断字符串是否**为空**
+`message.append(".")`
+追加内容
 
 
+### 4.
