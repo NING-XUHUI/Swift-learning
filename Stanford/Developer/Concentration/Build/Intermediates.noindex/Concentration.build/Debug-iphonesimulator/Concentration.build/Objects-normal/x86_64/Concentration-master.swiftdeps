@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "fdb2fe0502bb741edb99700717f66427"
+build_time: [1613648782, 160500000]
+inputs:
+  "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Concentration/Concentration/ContentView.swift": [1613648774, 782037153]
+  "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Concentration/Concentration/ConcentrationApp.swift": [1613648774, 777316495]

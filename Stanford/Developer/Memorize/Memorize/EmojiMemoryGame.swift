@@ -11,16 +11,16 @@ import SwiftUI
 //    return "😁"
 //}
 
-class EmojiMemoryGame {
+class EmojiMemoryGame: ObservableObject {
 //    private var model: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCards: 2, cardContentFactory: createCardContent)
-    private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
+    @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
     
     static func createMemoryGame() -> MemoryGame<String> {
         let emojis = ["😊", "😭", "😂", "🥱"]
         return MemoryGame<String>(numberOfPairsOfCards: emojis.count) { pairIndex in
             return emojis[pairIndex] }
     }
-        
+    
 
     // MARK: - Access to the Model
     
