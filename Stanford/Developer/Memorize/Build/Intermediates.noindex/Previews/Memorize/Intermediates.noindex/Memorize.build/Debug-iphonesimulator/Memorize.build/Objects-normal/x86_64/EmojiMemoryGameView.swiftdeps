@@ -23,9 +23,9 @@ depends-top-level:
 - "EmojiMemoryGameView"
 - "FloatLiteralType"
 - !private "Font"
-- "ForEach"
 - !private "GeometryReader"
-- !private "HStack"
+- !private "Grid"
+- !private "IntegerLiteralType"
 - "MemoryGame"
 - "ObservedObject"
 - "PreviewProvider"
@@ -40,7 +40,7 @@ depends-top-level:
 - !private "fontScaleFactor"
 - !private "fontSize"
 - !private "min"
-- "viewModel"
+- !private "viewModel"
 depends-member:
 - ["7SwiftUI10AnimatableP", ""]
 - !private ["7SwiftUI10AnimatableP", "fill"]
@@ -108,7 +108,6 @@ depends-member:
 - !private ["Se", "height"]
 - !private ["Se", "width"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
-- !private ["7SwiftUI18DynamicViewContentP", "init"]
 - ["8Memorize15EmojiMemoryGameC", ""]
 - !private ["8Memorize15EmojiMemoryGameC", "cards"]
 - !private ["8Memorize15EmojiMemoryGameC", "choose"]
@@ -119,8 +118,7 @@ depends-member:
 - !private ["8Memorize19EmojiMemoryGameViewV", "Color"]
 - ["8Memorize19EmojiMemoryGameViewV", "Default_Body"]
 - ["8Memorize19EmojiMemoryGameViewV", "EmojiMemoryGame"]
-- !private ["8Memorize19EmojiMemoryGameViewV", "ForEach"]
-- !private ["8Memorize19EmojiMemoryGameViewV", "HStack"]
+- !private ["8Memorize19EmojiMemoryGameViewV", "Grid"]
 - ["8Memorize19EmojiMemoryGameViewV", "ObservedObject"]
 - ["8Memorize19EmojiMemoryGameViewV", "View"]
 - ["8Memorize19EmojiMemoryGameViewV", ""]
@@ -144,15 +142,17 @@ depends-member:
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - ["s25ExpressibleByFloatLiteralP", "FloatLiteralType"]
 - ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["7SwiftUI4FontV", "system"]
-- !private ["7SwiftUI7ForEachV", "init"]
 - !private ["7SwiftUI13GeometryProxyV", "size"]
 - !private ["7SwiftUI14GeometryReaderV", "init"]
-- !private ["7SwiftUI6HStackV", "foregroundColor"]
-- !private ["7SwiftUI6HStackV", "init"]
+- !private ["8Memorize4GridV", ""]
+- !private ["8Memorize4GridV", "foregroundColor"]
+- !private ["8Memorize4GridV", "init"]
 - ["SH", ""]
 - !private ["SH", "orange"]
 - !private ["SH", "system"]
@@ -205,9 +205,8 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "Color"]
 - ["7SwiftUI4ViewP", "Default_Body"]
 - !private ["7SwiftUI4ViewP", "Font"]
-- !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "GeometryReader"]
-- !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "Grid"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "RoundedRectangle"]
 - !private ["7SwiftUI4ViewP", "Text"]
@@ -247,6 +246,7 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
@@ -276,21 +276,20 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - !private "Se"
 - "7SwiftUI15DynamicPropertyP"
-- !private "7SwiftUI18DynamicViewContentP"
 - "8Memorize15EmojiMemoryGameC"
 - "8Memorize19EmojiMemoryGameViewV"
 - !private "SE"
 - "SQ"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI4FontV"
-- !private "7SwiftUI7ForEachV"
 - !private "7SwiftUI13GeometryProxyV"
 - !private "7SwiftUI14GeometryReaderV"
-- !private "7SwiftUI6HStackV"
+- !private "8Memorize4GridV"
 - "SH"
 - !private "s12IdentifiableP"
 - !private "7SwiftUI15InsettableShapeP"
@@ -315,6 +314,7 @@ depends-nominal:
 - !private "s30_CustomPlaygroundQuickLookableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"

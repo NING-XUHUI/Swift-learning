@@ -25,6 +25,7 @@ depends-top-level:
 - !private "Font"
 - !private "GeometryReader"
 - !private "Grid"
+- !private "IntegerLiteralType"
 - "MemoryGame"
 - "ObservedObject"
 - "PreviewProvider"
@@ -50,6 +51,7 @@ depends-member:
 - ["SK", ""]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "width"]
+- !private ["8Memorize10MemoryGameV4CardV", ""]
 - !private ["8Memorize10MemoryGameV4CardV", "content"]
 - !private ["8Memorize10MemoryGameV4CardV", "isFaceUp"]
 - ["8Memorize8CardViewV", "Body"]
@@ -139,6 +141,8 @@ depends-member:
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - ["s25ExpressibleByFloatLiteralP", "FloatLiteralType"]
 - ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
@@ -241,6 +245,7 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
@@ -275,6 +280,7 @@ depends-nominal:
 - "SQ"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
@@ -306,6 +312,7 @@ depends-nominal:
 - !private "s30_CustomPlaygroundQuickLookableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
