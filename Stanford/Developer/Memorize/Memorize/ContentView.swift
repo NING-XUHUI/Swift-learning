@@ -9,10 +9,63 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        return VStack {
+            ForEach(0..<3) {index in
+                HStack {
+                    ForEach(0..<3) { index in
+                        CardView(isFaceUp: false)
+                    }
+                }
+            }
+        }
+        .foregroundColor(Color.orange)
+        .padding()
+        .font(Font.largeTitle)
     }
 }
+
+struct CardView: View {
+    var isFaceUp: Bool   // 此处必须初始化或在调用时传入参数，swift是强类型语言
+    var body: some View {
+        ZStack {
+            if isFaceUp {
+                RoundedRectangle(cornerRadius: 25.0)
+                    .fill(Color.white)
+                RoundedRectangle(cornerRadius: 25.0)
+                    .stroke(lineWidth: 3)
+                Text("👻")
+            } else {
+                RoundedRectangle(cornerRadius: 25.0).fill()
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
