@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         return VStack {
-            ForEach(0..<3) {index in
+            ForEach(0..<3) { _ in
                 HStack {
-                    ForEach(0..<3) { index in
+                    ForEach(0..<3) { _ in
                         CardView(isFaceUp: false)
                     }
                 }
