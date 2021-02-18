@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    var viewModel: EmojiMemoryGame
     var body: some View {
-        return VStack {
-            ForEach(0..<3) { _ in
-                HStack {
-                    ForEach(0..<3) { _ in
-                        CardView(isFaceUp: false)
-                    }
+        HStack {
+            ForEach(viewModel.cards) { card in
+                CardView(card: card).onTapGesture{
+                    self.viewModel.choose(card: card)
                 }
             }
         }
@@ -25,15 +24,16 @@ struct ContentView: View {
 }
 
 struct CardView: View {
-    var isFaceUp: Bool   // 此处必须初始化或在调用时传入参数，swift是强类型语言
+//    var isFaceUp: Bool   // 此处必须初始化或在调用时传入参数，swift是强类型语言
+    var card: MemoryGame<String>.Card
     var body: some View {
         ZStack {
-            if isFaceUp {
+            if card.isFaceUp {
                 RoundedRectangle(cornerRadius: 25.0)
                     .fill(Color.white)
                 RoundedRectangle(cornerRadius: 25.0)
                     .stroke(lineWidth: 3)
-                Text("👻")
+                Text(card.content)
             } else {
                 RoundedRectangle(cornerRadius: 25.0).fill()
             }
@@ -69,6 +69,6 @@ struct CardView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: EmojiMemoryGame())
     }
 }
