@@ -13,17 +13,20 @@ provides-member:
 - ["8Memorize20ContentView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "*"
+- "CGFloat"
+- "CGSize"
 - "CardView"
 - "Color"
 - "ContentView_Previews"
 - "EmojiMemoryGame"
 - "EmojiMemoryGameView"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - !private "Font"
-- "ForEach"
-- !private "HStack"
-- !private "IntegerLiteralType"
+- !private "GeometryReader"
+- !private "Grid"
 - "MemoryGame"
+- "ObservedObject"
 - "PreviewProvider"
 - "RoundedRectangle"
 - "String"
@@ -31,19 +34,31 @@ depends-top-level:
 - "View"
 - !private "ZStack"
 - "card"
-- "viewModel"
+- "cornerRadius"
+- "edgeLineWidth"
+- !private "fontScaleFactor"
+- !private "fontSize"
+- !private "min"
+- !private "viewModel"
 depends-member:
 - ["7SwiftUI10AnimatableP", ""]
 - !private ["7SwiftUI10AnimatableP", "fill"]
+- !private ["7SwiftUI10AnimatableP", "height"]
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "stroke"]
+- !private ["7SwiftUI10AnimatableP", "width"]
 - ["SK", ""]
-- !private ["8Memorize10MemoryGameV4CardV", ""]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "width"]
 - !private ["8Memorize10MemoryGameV4CardV", "content"]
 - !private ["8Memorize10MemoryGameV4CardV", "isFaceUp"]
 - ["8Memorize8CardViewV", "Body"]
+- ["8Memorize8CardViewV", "CGFloat"]
+- ["8Memorize8CardViewV", "CGSize"]
 - !private ["8Memorize8CardViewV", "Color"]
 - ["8Memorize8CardViewV", "Default_Body"]
+- !private ["8Memorize8CardViewV", "Font"]
+- !private ["8Memorize8CardViewV", "GeometryReader"]
 - ["8Memorize8CardViewV", "MemoryGame"]
 - !private ["8Memorize8CardViewV", "RoundedRectangle"]
 - ["8Memorize8CardViewV", "String"]
@@ -57,8 +72,12 @@ depends-member:
 - ["8Memorize8CardViewV", "_viewListCount"]
 - ["8Memorize8CardViewV", "body"]
 - ["8Memorize8CardViewV", "card"]
+- ["8Memorize8CardViewV", "cornerRadius"]
+- ["8Memorize8CardViewV", "edgeLineWidth"]
+- ["8Memorize8CardViewV", "fontScaleFactor"]
+- ["8Memorize8CardViewV", "fontSize"]
 - ["8Memorize8CardViewV", "init"]
-- !private ["8Memorize8CardViewV", "onTapGesture"]
+- !private ["8Memorize8CardViewV", "min"]
 - ["Sl", ""]
 - !private ["7SwiftUI5ColorV", "orange"]
 - !private ["7SwiftUI5ColorV", "white"]
@@ -75,50 +94,57 @@ depends-member:
 - ["8Memorize20ContentView_PreviewsV", "init"]
 - ["8Memorize20ContentView_PreviewsV", "platform"]
 - ["8Memorize20ContentView_PreviewsV", "previews"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "width"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "orange"]
 - !private ["s23CustomStringConvertibleP", "white"]
-- !private ["7SwiftUI18DynamicViewContentP", "init"]
-- !private ["8Memorize15EmojiMemoryGameC", "cards"]
-- !private ["8Memorize15EmojiMemoryGameC", "choose"]
+- !private ["Se", "height"]
+- !private ["Se", "width"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- ["8Memorize15EmojiMemoryGameC", ""]
 - !private ["8Memorize15EmojiMemoryGameC", "init"]
+- ["8Memorize19EmojiMemoryGameViewV", "$viewModel"]
 - ["8Memorize19EmojiMemoryGameViewV", "Body"]
 - !private ["8Memorize19EmojiMemoryGameViewV", "CardView"]
 - !private ["8Memorize19EmojiMemoryGameViewV", "Color"]
 - ["8Memorize19EmojiMemoryGameViewV", "Default_Body"]
 - ["8Memorize19EmojiMemoryGameViewV", "EmojiMemoryGame"]
-- !private ["8Memorize19EmojiMemoryGameViewV", "Font"]
-- !private ["8Memorize19EmojiMemoryGameViewV", "ForEach"]
-- !private ["8Memorize19EmojiMemoryGameViewV", "HStack"]
+- !private ["8Memorize19EmojiMemoryGameViewV", "Grid"]
+- ["8Memorize19EmojiMemoryGameViewV", "ObservedObject"]
 - ["8Memorize19EmojiMemoryGameViewV", "View"]
 - ["8Memorize19EmojiMemoryGameViewV", ""]
 - ["8Memorize19EmojiMemoryGameViewV", "_Default_Body"]
 - ["8Memorize19EmojiMemoryGameViewV", "_makeView"]
 - ["8Memorize19EmojiMemoryGameViewV", "_makeViewList"]
 - ["8Memorize19EmojiMemoryGameViewV", "_viewListCount"]
+- !private ["8Memorize19EmojiMemoryGameViewV", "_viewModel"]
 - ["8Memorize19EmojiMemoryGameViewV", "body"]
 - ["8Memorize19EmojiMemoryGameViewV", "init"]
 - ["8Memorize19EmojiMemoryGameViewV", "viewModel"]
+- !private ["SE", "height"]
+- !private ["SE", "width"]
 - ["SQ", ""]
+- !private ["SQ", "height"]
 - !private ["SQ", "init"]
-- !private ["SQ", "largeTitle"]
 - !private ["SQ", "orange"]
+- !private ["SQ", "system"]
 - !private ["SQ", "white"]
+- !private ["SQ", "width"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
-- !private ["s25ExpressibleByFloatLiteralP", "FloatLiteralType"]
-- !private ["s25ExpressibleByFloatLiteralP", "init"]
-- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
-- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s25ExpressibleByFloatLiteralP", "FloatLiteralType"]
+- ["s25ExpressibleByFloatLiteralP", "init"]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
-- !private ["7SwiftUI4FontV", "largeTitle"]
-- !private ["7SwiftUI7ForEachV", "init"]
-- !private ["7SwiftUI6HStackV", "foregroundColor"]
-- !private ["7SwiftUI6HStackV", "init"]
+- !private ["7SwiftUI4FontV", "system"]
+- !private ["7SwiftUI13GeometryProxyV", "size"]
+- !private ["7SwiftUI14GeometryReaderV", "init"]
 - ["SH", ""]
-- !private ["SH", "largeTitle"]
 - !private ["SH", "orange"]
+- !private ["SH", "system"]
 - !private ["SH", "white"]
 - !private ["s12IdentifiableP", "content"]
 - !private ["s12IdentifiableP", "isFaceUp"]
@@ -128,6 +154,12 @@ depends-member:
 - ["s25LosslessStringConvertibleP", ""]
 - ["8Memorize10MemoryGameV", "Card"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSObjectP", ""]
+- !private ["7Combine16ObservableObjectP", "init"]
+- ["7SwiftUI14ObservedObjectV", "init"]
+- ["7SwiftUI14ObservedObjectV", "projectedValue"]
+- ["7SwiftUI14ObservedObjectV", "subscript"]
+- ["7SwiftUI14ObservedObjectV", "wrappedValue"]
 - ["7SwiftUI15PreviewProviderP", "Default_Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "EmojiMemoryGame"]
 - !private ["7SwiftUI15PreviewProviderP", "EmojiMemoryGameView"]
@@ -138,6 +170,10 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["7Combine9PublishedV", "init"]
+- !private ["7Combine9PublishedV", "projectedValue"]
+- !private ["7Combine9PublishedV", "subscript"]
+- !private ["7Combine9PublishedV", "wrappedValue"]
 - !private ["7SwiftUI16RoundedRectangleV", "fill"]
 - !private ["7SwiftUI16RoundedRectangleV", "init"]
 - !private ["7SwiftUI16RoundedRectangleV", "stroke"]
@@ -156,8 +192,9 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "Color"]
 - ["7SwiftUI4ViewP", "Default_Body"]
 - !private ["7SwiftUI4ViewP", "Font"]
-- !private ["7SwiftUI4ViewP", "ForEach"]
-- !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "GeometryReader"]
+- !private ["7SwiftUI4ViewP", "Grid"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "RoundedRectangle"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "ZStack"]
@@ -167,14 +204,17 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "_viewListCount"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "callAsFunction"]
 - !private ["7SwiftUI4ViewP", "card"]
+- !private ["7SwiftUI4ViewP", "cornerRadius"]
+- !private ["7SwiftUI4ViewP", "edgeLineWidth"]
 - !private ["7SwiftUI4ViewP", "fill"]
 - !private ["7SwiftUI4ViewP", "font"]
-- !private ["7SwiftUI4ViewP", "foregroundColor"]
+- !private ["7SwiftUI4ViewP", "fontScaleFactor"]
+- !private ["7SwiftUI4ViewP", "fontSize"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "onTapGesture"]
+- !private ["7SwiftUI4ViewP", "min"]
 - !private ["7SwiftUI4ViewP", "orange"]
-- !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "stroke"]
 - !private ["7SwiftUI4ViewP", "viewModel"]
 - !private ["7SwiftUI4ViewP", "white"]
@@ -184,11 +224,15 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
+- !private ["7SwiftUI6ZStackV", "font"]
 - !private ["7SwiftUI6ZStackV", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
-- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
 - ["7SwiftUI16_PreviewProviderP", "Default_Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "EmojiMemoryGame"]
 - !private ["7SwiftUI16_PreviewProviderP", "EmojiMemoryGameView"]
@@ -202,33 +246,41 @@ depends-member:
 depends-nominal:
 - "7SwiftUI10AnimatableP"
 - "SK"
+- !private "So6CGSizeV"
 - !private "8Memorize10MemoryGameV4CardV"
 - "8Memorize8CardViewV"
 - "Sl"
 - !private "7SwiftUI5ColorV"
 - "SL"
 - "8Memorize20ContentView_PreviewsV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "7SwiftUI18DynamicViewContentP"
-- !private "8Memorize15EmojiMemoryGameC"
+- !private "Se"
+- "7SwiftUI15DynamicPropertyP"
+- "8Memorize15EmojiMemoryGameC"
 - "8Memorize19EmojiMemoryGameViewV"
+- !private "SE"
 - "SQ"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s25ExpressibleByFloatLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
+- "s25ExpressibleByFloatLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI4FontV"
-- !private "7SwiftUI7ForEachV"
-- !private "7SwiftUI6HStackV"
+- !private "7SwiftUI13GeometryProxyV"
+- !private "7SwiftUI14GeometryReaderV"
 - "SH"
 - !private "s12IdentifiableP"
 - !private "7SwiftUI15InsettableShapeP"
 - "s25LosslessStringConvertibleP"
 - "8Memorize10MemoryGameV"
 - "So8NSCodingP"
+- !private "So8NSObjectP"
+- !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - "7SwiftUI15PreviewProviderP"
+- !private "7Combine9PublishedV"
 - !private "7SwiftUI16RoundedRectangleV"
 - "ST"
 - !private "7SwiftUI5ShapeP"
@@ -239,10 +291,11 @@ depends-nominal:
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - !private "7SwiftUI6ZStackV"
+- !private "s30_CustomPlaygroundQuickLookableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s33_ExpressibleByBuiltinFloatLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s33_ExpressibleByBuiltinFloatLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
@@ -286,4 +339,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bc379797ac19972406b93d390e097889"
+interface-hash: "229872271f0f5bfe1a02492481de8c1a"

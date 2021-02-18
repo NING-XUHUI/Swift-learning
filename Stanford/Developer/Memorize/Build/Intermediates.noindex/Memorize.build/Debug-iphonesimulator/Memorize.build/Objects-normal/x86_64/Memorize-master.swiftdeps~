@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
 options: "28a33a9dde847159110f8304630f3437"
-build_time: [1613627952, 189128000]
+build_time: [1613661889, 283199000]
 inputs:
-  "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/MemoryGame.swift": [1613627916, 522003650]
-  "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift": [1613627359, 967577438]
+  "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/MemoryGame.swift": [1613627983, 382435922]
+  "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift": !dirty [1613661865, 246607346]
   "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/MemorizeApp.swift": [1613627314, 230052530]
-  "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGame.swift": [1613626213, 473371769]
+  "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGame.swift": [1613628267, 479412543]

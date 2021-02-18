@@ -4,25 +4,44 @@ import SwiftUI
 
 extension ContentView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 75)
+        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 69)
         AnyView(EmojiMemoryGameView(viewModel: EmojiMemoryGame()))
     #sourceLocation()
     }
 }
 
 extension CardView {
-    @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 33)
+    @_dynamicReplacement(for: fontSize(for:)) private func __preview__fontSize(for size: CGSize) -> CGFloat {
+        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 58)
+        return min(size.width, size.height) * fontScaleFactor
+    #sourceLocation()
+    }
+}
+
+extension CardView {
+    @_dynamicReplacement(for: body(for:)) private func __preview__body(for size:                                                                                                                                                                        CGSize) -> some View {
+        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 38)
         AnyView(ZStack {
             if card.isFaceUp {
-                RoundedRectangle(cornerRadius: __designTimeFloat("#17494.[2].[1].property.[0].[0].arg[0].value.[0].[0].[0].arg[0].value", fallback: 25.0))
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(Color.white)
-                RoundedRectangle(cornerRadius: __designTimeFloat("#17494.[2].[1].property.[0].[0].arg[0].value.[0].[0].[1].arg[0].value", fallback: 25.0))
-                    .stroke(lineWidth: __designTimeInteger("#17494.[2].[1].property.[0].[0].arg[0].value.[0].[0].[1].modifier[0].arg[0].value", fallback: 3))
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .stroke(lineWidth: edgeLineWidth)
                 Text(card.content)
             } else {
-                RoundedRectangle(cornerRadius: __designTimeFloat("#17494.[2].[1].property.[0].[0].arg[0].value.[0].[1].[0].arg[0].value", fallback: 25.0)).fill()
+                RoundedRectangle(cornerRadius: cornerRadius).fill()
             }
+        }
+        .font(Font.system(size: fontSize(for: size))))
+    #sourceLocation()
+    }
+}
+
+extension CardView {
+    @_dynamicReplacement(for: body) private var __preview__body: some View {
+        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 32)
+        AnyView(GeometryReader{ geometry in
+            self.body(for: geometry.size)
         })
     #sourceLocation()
     }
@@ -39,8 +58,7 @@ extension EmojiMemoryGameView {
             }
         }
         .foregroundColor(Color.orange)
-        .padding()
-        .font(Font.largeTitle))
+        .padding())
     #sourceLocation()
     }
 }

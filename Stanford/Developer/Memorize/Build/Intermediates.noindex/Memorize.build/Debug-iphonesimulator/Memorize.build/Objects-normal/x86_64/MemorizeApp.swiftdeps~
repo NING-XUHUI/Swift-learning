@@ -25,6 +25,7 @@ depends-member:
 - ["7SwiftUI3AppP", "body"]
 - ["7SwiftUI3AppP", "init"]
 - ["7SwiftUI3AppP", "main"]
+- !private ["8Memorize15EmojiMemoryGameC", ""]
 - !private ["8Memorize15EmojiMemoryGameC", "init"]
 - !private ["8Memorize19EmojiMemoryGameViewV", ""]
 - !private ["8Memorize19EmojiMemoryGameViewV", "init"]
@@ -39,6 +40,15 @@ depends-member:
 - ["8Memorize0A3AppV", "body"]
 - ["8Memorize0A3AppV", "init"]
 - ["8Memorize0A3AppV", "main"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- !private ["7SwiftUI14ObservedObjectV", "init"]
+- !private ["7SwiftUI14ObservedObjectV", "projectedValue"]
+- !private ["7SwiftUI14ObservedObjectV", "subscript"]
+- !private ["7SwiftUI14ObservedObjectV", "wrappedValue"]
+- !private ["7Combine9PublishedV", "init"]
+- !private ["7Combine9PublishedV", "projectedValue"]
+- !private ["7Combine9PublishedV", "subscript"]
+- !private ["7Combine9PublishedV", "wrappedValue"]
 - !private ["7SwiftUI5SceneP", "init"]
 - !private ["7SwiftUI12SceneBuilderV", "buildBlock"]
 - !private ["7SwiftUI12SceneBuilderV", "buildExpression"]
@@ -57,6 +67,9 @@ depends-nominal:
 - !private "8Memorize15EmojiMemoryGameC"
 - !private "8Memorize19EmojiMemoryGameViewV"
 - "8Memorize0A3AppV"
+- !private "7Combine16ObservableObjectP"
+- !private "7SwiftUI14ObservedObjectV"
+- !private "7Combine9PublishedV"
 - !private "7SwiftUI5SceneP"
 - !private "7SwiftUI12SceneBuilderV"
 - !private "7SwiftUI4ViewP"

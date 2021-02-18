@@ -6,6 +6,8 @@ provides-nominal:
 provides-member:
 - ["8Memorize15EmojiMemoryGameC", ""]
 provides-dynamic-lookup:
+- "$model"
+- "_model"
 - "cards"
 - "choose"
 - "createMemoryGame"
@@ -14,6 +16,8 @@ depends-top-level:
 - "Array"
 - "EmojiMemoryGame"
 - "MemoryGame"
+- "ObservableObject"
+- "Published"
 - "String"
 - !private "StringLiteralType"
 - !private "UnicodeScalarType"
@@ -44,16 +48,24 @@ depends-member:
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "count"]
 - !private ["Se", "subscript"]
+- !private ["8Memorize15EmojiMemoryGameC", "$model"]
 - ["8Memorize15EmojiMemoryGameC", "Array"]
+- ["8Memorize15EmojiMemoryGameC", "Default_ObjectWillChangePublisher"]
 - ["8Memorize15EmojiMemoryGameC", "EmojiMemoryGame"]
 - ["8Memorize15EmojiMemoryGameC", "MemoryGame"]
+- ["8Memorize15EmojiMemoryGameC", "ObjectWillChangePublisher"]
+- ["8Memorize15EmojiMemoryGameC", "Published"]
 - ["8Memorize15EmojiMemoryGameC", "String"]
+- ["8Memorize15EmojiMemoryGameC", ""]
+- ["8Memorize15EmojiMemoryGameC", "_Default_ObjectWillChangePublisher"]
+- !private ["8Memorize15EmojiMemoryGameC", "_model"]
 - ["8Memorize15EmojiMemoryGameC", "cards"]
 - ["8Memorize15EmojiMemoryGameC", "choose"]
 - ["8Memorize15EmojiMemoryGameC", "createMemoryGame"]
 - ["8Memorize15EmojiMemoryGameC", "deinit"]
 - ["8Memorize15EmojiMemoryGameC", "init"]
 - !private ["8Memorize15EmojiMemoryGameC", "model"]
+- ["8Memorize15EmojiMemoryGameC", "objectWillChange"]
 - !private ["SE", "count"]
 - !private ["SE", "subscript"]
 - !private ["SQ", ""]
@@ -74,6 +86,23 @@ depends-member:
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["7Combine16ObservableObjectP", "Default_ObjectWillChangePublisher"]
+- ["7Combine16ObservableObjectP", "EmojiMemoryGame"]
+- ["7Combine16ObservableObjectP", "Failure"]
+- !private ["7Combine16ObservableObjectP", "MemoryGame"]
+- ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
+- ["7Combine16ObservableObjectP", "Published"]
+- ["7Combine16ObservableObjectP", ""]
+- ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
+- !private ["7Combine16ObservableObjectP", "_model"]
+- !private ["7Combine16ObservableObjectP", "choose"]
+- ["7Combine16ObservableObjectP", "createMemoryGame"]
+- !private ["7Combine16ObservableObjectP", "model"]
+- ["7Combine16ObservableObjectP", "objectWillChange"]
+- ["7Combine9PublishedV", "init"]
+- ["7Combine9PublishedV", "projectedValue"]
+- ["7Combine9PublishedV", "subscript"]
+- ["7Combine9PublishedV", "wrappedValue"]
 - !private ["Sk", ""]
 - !private ["Sk", "count"]
 - !private ["Sk", "subscript"]
@@ -114,6 +143,8 @@ depends-nominal:
 - "8Memorize10MemoryGameV"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
+- "7Combine16ObservableObjectP"
+- "7Combine9PublishedV"
 - !private "Sk"
 - !private "Sm"
 - !private "ST"
@@ -165,4 +196,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7fbe698c9b2d6c7d02e30a92f39e4d60"
+interface-hash: "009cde9372179da507f13718a3be1917"
