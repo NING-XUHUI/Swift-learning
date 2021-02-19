@@ -34,8 +34,7 @@ struct Grid<Item, ItemView>: View where Item: Identifiable, ItemView: View{
             .frame(width: layout.itemSize.width, height: layout.itemSize.height)
             .position(layout.location(ofItemAt: index))
     }
-    
-
 }
+
 
 

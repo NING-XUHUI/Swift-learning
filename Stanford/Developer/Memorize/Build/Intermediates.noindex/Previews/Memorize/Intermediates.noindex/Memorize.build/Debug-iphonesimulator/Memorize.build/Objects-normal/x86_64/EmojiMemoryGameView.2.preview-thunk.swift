@@ -42,7 +42,7 @@ extension CardView {
         #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 31)
         AnyView(GeometryReader{ geometry in
             self.body(for: geometry.size)
-        })
+        }) 
     #sourceLocation()
     }
 }
@@ -54,7 +54,7 @@ extension EmojiMemoryGameView {
             CardView(card: card).onTapGesture{
                 self.viewModel.choose(card: card)
             }
-            .padding(__designTimeInteger("#9536.[1].[1].property.[0].[0].arg[1].value.[0].modifier[1].arg[0].value", fallback: 5))
+            .padding(__designTimeInteger("#9446.[1].[1].property.[0].[0].arg[1].value.[0].modifier[1].arg[0].value", fallback: 5))
         }
         .foregroundColor(Color.orange)
         .padding())

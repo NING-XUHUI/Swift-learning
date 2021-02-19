@@ -30,7 +30,7 @@ struct CardView: View {
     var body: some View {
         GeometryReader{ geometry in
             self.body(for: geometry.size)
-        }
+        } 
     }
     
     func body(for size: CGSize) -> some View {
