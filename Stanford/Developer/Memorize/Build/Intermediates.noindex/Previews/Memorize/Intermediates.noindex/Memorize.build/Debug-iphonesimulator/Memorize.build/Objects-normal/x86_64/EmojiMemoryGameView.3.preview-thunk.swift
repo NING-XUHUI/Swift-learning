@@ -4,7 +4,7 @@ import SwiftUI
 
 extension ContentView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 65)
+        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 67)
         AnyView(__designTimeSelection(EmojiMemoryGameView(viewModel: __designTimeSelection(EmojiMemoryGame(), "#9446.[3].[0].property.[0].[0].arg[0].value")), "#9446.[3].[0].property.[0].[0]"))
     #sourceLocation()
     }
@@ -12,7 +12,7 @@ extension ContentView_Previews {
 
 extension CardView {
     @_dynamicReplacement(for: fontSize(for:)) private func __preview__fontSize(for size: CGSize) -> CGFloat {
-        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 57)
+        #sourceLocation(file: "/Users/ningxuhui/Documents/GitHub/Swift-learning/Stanford/Developer/Memorize/Memorize/EmojiMemoryGameView.swift", line: 59)
         return min(size.width, size.height) * fontScaleFactor
     #sourceLocation()
     }
@@ -29,7 +29,9 @@ extension CardView {
                     .stroke(lineWidth: __designTimeSelection(edgeLineWidth, "#9446.[2].[2].[0].arg[0].value.[0].[0].[1].modifier[0].arg[0].value")), "#9446.[2].[2].[0].arg[0].value.[0].[0].[1]")
                 __designTimeSelection(Text(__designTimeSelection(card.content, "#9446.[2].[2].[0].arg[0].value.[0].[0].[2].arg[0].value")), "#9446.[2].[2].[0].arg[0].value.[0].[0].[2]")
             } else {
-                __designTimeSelection(RoundedRectangle(cornerRadius: __designTimeSelection(cornerRadius, "#9446.[2].[2].[0].arg[0].value.[0].[1].[0].arg[0].value")).fill(), "#9446.[2].[2].[0].arg[0].value.[0].[1].[0]")
+                if !card.isMatched {
+                    __designTimeSelection(RoundedRectangle(cornerRadius: __designTimeSelection(cornerRadius, "#9446.[2].[2].[0].arg[0].value.[0].[1].[0].[0].[0].arg[0].value")).fill(), "#9446.[2].[2].[0].arg[0].value.[0].[1].[0].[0].[0]")
+                }
             }
         }
         .font(__designTimeSelection(Font.system(size: __designTimeSelection(fontSize(for: __designTimeSelection(size, "#9446.[2].[2].[0].modifier[0].arg[0].value.arg[0].value.arg[0].value")), "#9446.[2].[2].[0].modifier[0].arg[0].value.arg[0].value")), "#9446.[2].[2].[0].modifier[0].arg[0].value")), "#9446.[2].[2].[0]"))
