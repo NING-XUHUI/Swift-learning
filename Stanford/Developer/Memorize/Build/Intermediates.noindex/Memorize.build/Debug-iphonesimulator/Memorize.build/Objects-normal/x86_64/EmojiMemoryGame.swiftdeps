@@ -95,6 +95,7 @@ depends-member:
 - ["7Combine16ObservableObjectP", ""]
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
 - !private ["7Combine16ObservableObjectP", "_model"]
+- !private ["7Combine16ObservableObjectP", "cards"]
 - !private ["7Combine16ObservableObjectP", "choose"]
 - ["7Combine16ObservableObjectP", "createMemoryGame"]
 - !private ["7Combine16ObservableObjectP", "model"]
@@ -196,4 +197,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "009cde9372179da507f13718a3be1917"
+interface-hash: "dcebdebeb571a7dc0a8b0597d7be9e87"
